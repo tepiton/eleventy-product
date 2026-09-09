@@ -9,7 +9,7 @@
 	--color-surface: #20242c;
 	--color-surface-raised: #262b34;
 	--color-text: #dad8d8;
-	--color-muted: #9aa0a6;
+	--color-muted: #a6adb5;
 	--color-accent: #7aa2f7;
 	--color-accent-strong: #9dbaff;
 	--color-accent-contrast: #0c1220;
@@ -57,7 +57,7 @@ body.dark-mode {
 	--color-surface: #20242c;
 	--color-surface-raised: #262b34;
 	--color-text: #dad8d8;
-	--color-muted: #9aa0a6;
+	--color-muted: #a6adb5;
 	--color-accent: #7aa2f7;
 	--color-accent-strong: #9dbaff;
 	--color-accent-contrast: #0c1220;
@@ -365,7 +365,7 @@ main section:nth-of-type(even) {
 	color: var(--color-accent);
 }
 
-.nav ul {
+ul.nav {
 	display: flex;
 	gap: 1.1rem;
 	list-style: none;
@@ -537,7 +537,7 @@ main section:nth-of-type(even) {
 		gap: 0.75rem;
 	}
 
-	.nav ul {
+	ul.nav {
 		gap: 0.85rem;
 	}
 

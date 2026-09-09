@@ -65,7 +65,7 @@
 			<a class="button button-small header-cta" href="{{ metadata.cta.href }}">{{ metadata.cta.label }}</a>
 			{%- endif %}
 			<div class="theme-switcher">
-				<button id="theme-toggle" class="theme-toggle" title="Change theme" aria-haspopup="true" aria-expanded="false">◑</button>
+				<button id="theme-toggle" class="theme-toggle" aria-label="Change theme" title="Change theme" aria-haspopup="true" aria-expanded="false">◑</button>
 				<div id="theme-options" class="theme-options">
 					<a href="#" class="theme-option" data-theme="light"><span class="theme-option-icon">☀</span><span>Light</span></a>
 					<a href="#" class="theme-option" data-theme="dark"><span class="theme-option-icon">☽</span><span>Dark</span></a>
@@ -86,8 +86,9 @@
 				<span>&copy; {% currentYear %} {{ metadata.author.name }}</span>
 			</p>
 			<p class="footer-links">
-				<a href="/about/">About</a>
-				<a href="/contact/">Contact</a>
+				{%- for entry in collections.all | eleventyNavigation %}
+				<a href="{{ entry.url }}">{{ entry.title }}</a>
+				{%- endfor %}
 			</p>
 		</div>
 	</footer>
