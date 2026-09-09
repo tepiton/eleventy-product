@@ -1,0 +1,5 @@
+/* Features: shared .card-grid from index.css, tuned column shape */
+.features .card-grid {
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 1.1rem;
+}

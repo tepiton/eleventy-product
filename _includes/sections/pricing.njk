@@ -1,0 +1,28 @@
+<style>{% include "css/sections/pricing.css" %}</style>
+<section id="pricing" class="section pricing">
+	<div class="container">
+		<header class="section-head">
+			<h2>{{ section.data.title }}</h2>
+			{%- if section.templateContent and section.templateContent.trim().length %}
+			<div class="section-lede">{{ section.templateContent | safe }}</div>
+			{%- endif %}
+		</header>
+		<ul class="pricing-grid">
+			{%- for tier in section.data.tiers %}
+			<li class="pricing-card{% if tier.highlight %} pricing-card-highlight{% endif %}">
+				{%- if tier.highlight %}<p class="pricing-badge">Most popular</p>{% endif -%}
+				<h3 class="pricing-name">{{ tier.name }}</h3>
+				<p class="pricing-price">{{ tier.price }}{%- if tier.period %} <span class="pricing-period">{{ tier.period }}</span>{% endif -%}</p>
+				{%- if tier.description %}<p class="pricing-description">{{ tier.description }}</p>{% endif -%}
+				{%- if tier.features %}
+				<ul class="pricing-features">
+					{%- for f in tier.features %}<li>{{ f }}</li>{% endfor -%}
+				</ul>
+				{%- endif %}
+				{%- if tier.cta %}<a class="button pricing-cta{% if not tier.highlight %} button-ghost{% endif %}" href="{{ tier.cta.href }}">{{ tier.cta.label }}</a>{% endif -%}
+			</li>
+			{%- endfor %}
+		</ul>
+		{%- if section.data.note %}<p class="pricing-note">{{ section.data.note }}</p>{% endif %}
+	</div>
+</section>

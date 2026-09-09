@@ -1,0 +1,21 @@
+/* CTA: accent-tinted closing band */
+.cta-band {
+	text-align: center;
+	background:
+		radial-gradient(48rem 22rem at 50% 120%, color-mix(in srgb, var(--color-accent) 16%, transparent), transparent);
+}
+
+.cta-heading {
+	font-size: clamp(1.9rem, 1.3rem + 2.2vw, 2.75rem);
+}
+
+.cta-lede {
+	color: var(--color-muted);
+	font-size: 1.1rem;
+	max-width: 34rem;
+	margin: 0.9rem auto 0;
+}
+
+.cta-actions {
+	margin-top: 2rem;
+}
