@@ -58,6 +58,15 @@ node scripts/generate-icons.mjs   # regenerate favicon/apple-touch/og images
   `content/img/x.png` relative). `public/` is for favicon/OG head links
   only - `<link>` hrefs pass through untouched.
 
+## Subpage layout
+
+`layouts/page.njk` (default via content.11tydata.js; index.njk pins
+base.njk explicitly) renders subpages with a page hero band plus
+optional frontmatter blocks: eyebrow, description (also the lede),
+wide, stats, cards, projects. Page CSS lives in the PAGES section of
+css/index.css. Keep page.njk and that CSS block identical between
+eleventy-product and eleventy-service.
+
 ## Theme system
 
 Same contract family-wide: localStorage key `theme`

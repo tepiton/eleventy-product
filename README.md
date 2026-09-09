@@ -130,7 +130,32 @@ paths. `public/` is for head assets only: favicons and the OG image.
 ### Subpages
 
 `content/pages/*.md` are ordinary pages (About, Contact) wired into the
-header nav via `eleventyNavigation` front matter.
+header nav via `eleventyNavigation` front matter. They use the shared
+`_includes/layouts/page.njk` layout, which gives every subpage a hero
+band matching the homepage's design language, plus optional
+frontmatter-driven blocks:
+
+```markdown
+---
+title: Built by people who ship
+eyebrow: About                     # small label above the title
+description: One-sentence lede under the title (also the meta description)
+eleventyNavigation: { key: "About", order: 2 }
+wide: true                         # container-width body (for card grids)
+stats:                             # row of accent figures
+  - { value: "2021", label: "Founded" }
+cards:                             # card grid, same design as features
+  - icon: chat
+    title: General
+    description: hello@yourproduct.com is the front door.
+    href: "mailto:hello@yourproduct.com"
+    action: "Email us"
+---
+
+Body prose in Markdown, styled to a comfortable reading measure.
+```
+
+All blocks are optional; a bare `title` plus prose is a fine page.
 
 ## Project structure
 

@@ -24,3 +24,18 @@
 - Verified: clean build, 6 composed sections, sitemap lists only real
   pages, single inline style tag, unknown section type fails with a
   file-named zod error.
+
+## Session 2 - 2026-09-09
+
+- Subpages had no styling beyond the base skeleton. Added a shared
+  layouts/page.njk (page hero band with eyebrow/title/lede, prose
+  measure body) plus frontmatter-driven blocks: stats row, cards grid,
+  projects list with tag chips, wide mode.
+- Default layout switched to page.njk via content.11tydata.js;
+  index.njk already pinned base.njk explicitly, so homepages are
+  unchanged. 404 inherits the page treatment too.
+- Rewrote all four subpages with real frontmatter and demo copy
+  (keeping eleventyNavigation - YAML object form works fine).
+- Verified in-browser: hero bands centered with border, 3-column
+  contact cards, 4 project rows with 9 tag chips, nav intact, no
+  horizontal overflow.
