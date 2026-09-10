@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "substitutions": [
+    {
+      "file": "content/_data/metadata.js",
+      "format": "js-key",
+      "key": "url",
+      "value": "https://{domain}/"
+    }
+  ]
+}
