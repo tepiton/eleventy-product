@@ -1,7 +1,7 @@
 ---
 title: Built by people who ship
 eyebrow: About
-description: Northlight started as an internal dashboard at a company drowning in spreadsheets. It escaped.
+description: The product started as an internal dashboard at a company drowning in spreadsheets. It escaped.
 eleventyNavigation: { key: "About", order: 2 }
 stats:
   - { value: "2021", label: "Founded" }
@@ -17,7 +17,7 @@ whomever argued loudest in a meeting. The data existed - it always
 exists - but getting an answer took a data request, a two-day wait, and
 a chart nobody trusted by the time it arrived.
 
-Northlight is the tool we wanted then: questions answered in seconds,
+{{ metadata.title }} is the tool we wanted then: questions answered in seconds,
 numbers everyone can check, and no waiting on anyone.
 
 ## How we work

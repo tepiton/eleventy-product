@@ -4,7 +4,7 @@ type: showcase
 order: 30
 steps:
   - title: Connect
-    description: Point Northlight at your warehouse or drop in the snippet. First events land in under ten minutes.
+    description: Point it at your warehouse or drop in the snippet. First events land in under ten minutes.
   - title: Explore
     description: Build funnels and cohorts by clicking, not querying. Save anything you will reuse as a shared definition.
   - title: Decide

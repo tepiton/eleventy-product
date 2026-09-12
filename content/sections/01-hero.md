@@ -9,4 +9,4 @@ logos: ["Aster & Co", "Kettle", "Moonrise", "Vantage", "Pinegrove"]
 logos_label: Trusted by product teams at
 ---
 
-Northlight turns raw product events into decisions you can defend: funnels, retention, and cohorts that answer themselves, without a data team in the loop.
+{{ metadata.title }} turns raw product events into decisions you can defend: funnels, retention, and cohorts that answer themselves, without a data team in the loop.
