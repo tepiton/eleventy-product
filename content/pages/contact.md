@@ -7,18 +7,18 @@ wide: true
 cards:
   - icon: chat
     title: General
-    description: "Questions about plans, trials, or anything else. hello@northlight.example.com is the front door."
-    href: "mailto:hello@northlight.example.com"
+    description: "Questions about plans, trials, or anything else. This is the front door."
+    useSiteEmail: true
     action: "Email us"
   - icon: bolt
     title: Support
-    description: "Stuck on setup or a weird data edge? support@northlight.example.com reaches the on-call engineer directly."
-    href: "mailto:support@northlight.example.com"
+    description: "Stuck on setup or a weird data edge? support@example.com reaches the on-call engineer directly."
+    href: "mailto:support@example.com"
     action: "Email support"
   - icon: shield
     title: Security
     description: "Responsible disclosure and security questions go straight to the founders. We take them seriously."
-    href: "mailto:security@northlight.example.com"
+    href: "mailto:security@example.com"
     action: "Email security"
 ---
 

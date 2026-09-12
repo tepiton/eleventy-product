@@ -6,6 +6,12 @@
       "format": "js-key",
       "key": "url",
       "value": "https://{domain}/"
+    },
+    {
+      "file": "content/_data/metadata.js",
+      "format": "js-key",
+      "key": "email",
+      "value": "hello@{domain}"
     }
   ]
 }

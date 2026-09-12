@@ -46,6 +46,37 @@
 	<meta name="twitter:card" content="summary_large_image">
 
 	<style>{% include "css/index.css" %}</style>
+	<style>
+		/* Brand palette from metadata.js (`brand` block). Same selectors as
+		   css/index.css, later in source order — wins at equal specificity
+		   in every theme context. */
+		:root,
+		html[data-force-theme="dark"],
+		body.dark-mode {
+			--color-accent: {{ metadata.brand.accent[0] }};
+			--color-accent-strong: {{ metadata.brand.accentStrong[0] }};
+			--color-accent-contrast: {{ metadata.brand.accentContrast[0] }};
+			--color-link: {{ metadata.brand.accent[0] }};
+			--color-link-hover: {{ metadata.brand.accentStrong[0] }};
+		}
+		@media (prefers-color-scheme: light) {
+			:root {
+				--color-accent: {{ metadata.brand.accent[1] }};
+				--color-accent-strong: {{ metadata.brand.accentStrong[1] }};
+				--color-accent-contrast: {{ metadata.brand.accentContrast[1] }};
+				--color-link: {{ metadata.brand.accent[1] }};
+				--color-link-hover: {{ metadata.brand.accentStrong[1] }};
+			}
+		}
+		html[data-force-theme="light"],
+		body.light-mode {
+			--color-accent: {{ metadata.brand.accent[1] }};
+			--color-accent-strong: {{ metadata.brand.accentStrong[1] }};
+			--color-accent-contrast: {{ metadata.brand.accentContrast[1] }};
+			--color-link: {{ metadata.brand.accent[1] }};
+			--color-link-hover: {{ metadata.brand.accentStrong[1] }};
+		}
+	</style>
 	<style>{% getBundle "css" %}</style>
 </head>
 <body>

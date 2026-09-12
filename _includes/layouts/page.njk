@@ -47,7 +47,9 @@
 					{%- if c.icon %}<span class="card-icon" aria-hidden="true">{% include "icons/" + c.icon + ".njk" %}</span>{% endif -%}
 					<h3>{{ c.title }}</h3>
 					<p>{{ c.description }}</p>
-					{%- if c.href %}<a class="card-action" href="{{ c.href }}">{{ c.action or "Learn more" }} &rarr;</a>{% endif -%}
+					{%- if c.useSiteEmail %}
+					<a class="card-action" href="mailto:{{ metadata.email }}">{{ c.action or "Email us" }} &rarr;</a>
+					{%- elif c.href %}<a class="card-action" href="{{ c.href }}">{{ c.action or "Learn more" }} &rarr;</a>{% endif -%}
 				</li>
 				{%- endfor %}
 			</ul>
