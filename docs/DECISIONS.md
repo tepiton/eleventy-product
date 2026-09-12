@@ -35,3 +35,23 @@ prose-blog de-personalization passes.
 
 **Decision:** Ten abstract stroke icons in `_includes/icons/`, picked by
 frontmatter `icon:` name. No emoji, no icon font, no runtime dependency.
+
+### DEC-P4: Branding centralized in metadata.js (2026-09-11)
+
+**Status:** accepted
+
+**Decision:** metadata.js is the single source for email and brand
+accent colors ([dark, light] pairs); base.njk, page cards
+(useSiteEmail), and generate-icons.mjs all read from it instead of
+hardcoding values. A rebrand (new client, new template instance) is a
+one-file edit.
+
+### DEC-P5: Demo prose interpolates brand where possible (2026-09-11)
+
+**Status:** accepted
+
+**Decision:** Markdown bodies render through nunjucks
+(markdownTemplateEngine: njk) so prose can reference
+{{ metadata.title }} and stay in sync with the brand automatically.
+Frontmatter string fields (feature/showcase/faq copy, ledes) can't
+interpolate, so those were hand-written brand-neutral instead.

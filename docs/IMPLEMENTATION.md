@@ -17,9 +17,16 @@
 - [x] Icon/OG generation script (sharp)
 - [x] Clean build verified; negative test (unknown type) fails loudly
 - [x] README, CLAUDE.md, docs
+- [x] Real subpage layout (page.njk): hero band, stats/cards/projects
+      blocks, wide mode; About and Contact rewritten with demo content
+- [x] mimeo.template.json manifest for deploy-time parameterization
+- [x] Branding centralized in metadata.js (email + accent palette);
+      base.njk, page cards, generate-icons.mjs all read from it
+- [x] Demo prose follows the brand via nunjucks-rendered markdown
 
 See: chronicles/phase-0-foundation.md
 
 ## Current State
 
-Builds clean. Deferred: tepiton publish, clone into TEMPLATES/.
+Builds clean. Published to tepiton/eleventy-product; living in
+TEMPLATES/. Nothing deferred.
