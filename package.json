@@ -10,7 +10,7 @@
 	},
 	"license": "MIT",
 	"engines": {
-		"node": ">=18"
+		"node": ">=22"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.1.0",
@@ -21,7 +21,6 @@
 		"zod-validation-error": "^3.4.1"
 	},
 	"allowScripts": {
-		"sharp@0.33.5": true,
 		"fsevents@2.3.3": true
 	}
 }
