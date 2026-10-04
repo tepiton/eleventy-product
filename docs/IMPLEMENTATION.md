@@ -5,6 +5,7 @@
 | # | Name | Status | Date Range |
 |---|------|--------|------------|
 | 0 | foundation | complete | 2026-09-08 |
+| 1 | maintenance | complete | 2026-10-03 |
 
 ### Phase 0: Foundation (2026-09-08)
 
@@ -25,6 +26,14 @@
 - [x] Demo prose follows the brand via nunjucks-rendered markdown
 
 See: chronicles/phase-0-foundation.md
+
+### Phase 1: Maintenance (2026-10-03)
+
+- [x] npm 12 install hygiene: stale sharp pin dropped, engines >=22,
+      `.nvmrc` 24, `.npmrc` fund/audit silenced (DEC-P6); fresh
+      installs silent
+
+See: chronicles/phase-1-maintenance.md
 
 ## Current State
 

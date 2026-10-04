@@ -55,3 +55,19 @@ one-file edit.
 {{ metadata.title }} and stay in sync with the brand automatically.
 Frontmatter string fields (feature/showcase/faq copy, ledes) can't
 interpolate, so those were hand-written brand-neutral instead.
+
+---
+
+### DEC-P6: Quiet installs — fund/audit silenced in .npmrc (2026-10-03)
+
+**Status:** accepted — revisit when eleventy 4 ships
+
+**Context:** npm audit reports high-severity findings rooted in
+braces→chokidar under eleventy/dev-server/nunjucks. No fixed release
+exists (braces 3.0.3 is latest; npm's only suggested fix is downgrading
+to eleventy 0.6.0). The chain runs only in the `--serve` file watcher —
+never during build or CI. Consumers cannot remediate it either.
+
+**Decision:** Commit `.npmrc` with `fund=false` and `audit=false` so
+install-time output is silent; `npm audit` still reports on demand.
+Drop `audit=false` when eleventy 4 (chokidar 5) lands.
