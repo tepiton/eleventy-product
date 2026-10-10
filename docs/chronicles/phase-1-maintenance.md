@@ -16,3 +16,17 @@
   `npm audit` still works on demand.
 
 See: DEC-P6
+
+## Session 2 — 2026-10-09
+
+- Template consolidation caught up here: eleventy-folio was retired
+  2026-10-04 (archived; chapbook inherited its `dek`), but this
+  README's family list still paired the two for chaptered literary
+  sites. Folio link dropped; chapbook carries the category alone.
+- Deploy section said "Node 20" while pages.yml has run node-version
+  24 since the 2026-10-03 engines pass — README now says Node 24,
+  matching the workflow.
+- Docs-only; no code touched, no build needed. Completes this repo's
+  share of the folio retirement.
+
+See: TEMPLATES docs/chronicles/phase-1.md, Entry 5

@@ -1,15 +1,15 @@
 ---
 phase: 1
 phase_name: maintenance
-updated: 2026-10-03
-last_commit: 583007b
+updated: 2026-10-09
+last_commit: 1330a0f
 ---
 
 # Current Focus
 
-npm 12 install-hygiene pass complete (Phase 1): silent fresh installs,
-truthful Node floor, stale allowScripts pin gone. Nothing else open in
-this repo.
+README cleanup complete (Phase 1): retired folio link dropped from
+the family list, Deploy section corrected to Node 24. Nothing else
+open in this repo.
 
 # Active Tasks
 
@@ -25,7 +25,10 @@ this repo.
   rebrand is a one-file edit (see DEC-P4); demo brand: Northlight
   Analytics
 - npm 12: `allowScripts` pins `fsevents@2.3.3` only (sharp 0.35.x has
-  no install script); engines >=22, `.nvmrc` 24
+  no install script); engines >=22, `.nvmrc` 24, CI node-version 24
+- eleventy-folio retired 2026-10-04 (TEMPLATES docs/chronicles
+  phase-1 Entry 5); this README no longer links it — chapbook is the
+  chaptered-literary template
 - Remaining audit findings are braces→chokidar, dev-server-only and
   unfixable on eleventy 3; hidden from install output only (DEC-P6)
 - Cross-cutting decisions live in the kincaid meta-repo docs/

@@ -8,7 +8,7 @@ Part of a family of interoperable mimeo templates:
 - [eleventy-service](https://github.com/tepiton/eleventy-service) — landing pages for service businesses
 - [eleventy-prose-blog](https://github.com/tepiton/eleventy-prose-blog) — personal prose blogs
 - [eleventy-tech-blog](https://github.com/tepiton/eleventy-tech-blog) — developer blogs
-- [eleventy-chapbook](https://github.com/tepiton/eleventy-chapbook) / [eleventy-folio](https://github.com/tepiton/eleventy-folio) — chaptered literary sites
+- [eleventy-chapbook](https://github.com/tepiton/eleventy-chapbook) — chaptered literary sites
 - [eleventy-pamphlet](https://github.com/tepiton/eleventy-pamphlet) — short literary works
 
 Sites are provisioned with [mimeo](https://github.com/pborenstein/mimeo):
@@ -218,7 +218,7 @@ All blocks are optional; a bare `title` plus prose is a fine page.
 ## Deploy
 
 Pushing to `main` deploys via `.github/workflows/pages.yml` (GitHub
-Pages, Node 20, `npm ci`). The workflow computes the path prefix
+Pages, Node 24, `npm ci`). The workflow computes the path prefix
 automatically for `*.github.io` project pages, so no configuration is
 needed. A custom domain is set through your host (mimeo does this via
 the GitHub API) — there is no CNAME file to commit.
